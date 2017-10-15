@@ -84,10 +84,10 @@ void receiveEvent(int Bytes) {
   int Packet[Bytes];
   for (int i = 0; i < Bytes; i++) {
     Packet[i] = Wire.read();
-    Serial.print(i);
-    Serial.print(" = ");
-    Serial.println(Packet[i], HEX);
+    Serial.print(Packet[i], HEX);
+    Serial.print(" ");
   }
+  Serial.println("");
   
   // Evaluate the packet (in the following order):
   // LED number (0-7)
