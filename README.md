@@ -14,6 +14,9 @@ Protocol format:
 ```
 
 Mode can be:
+
 0 = not-init - Raise brightness from 0 -> 100 then reset.
+
 1 = solid - Keep the LED on at all times.
+
 2 = flash - Flash the led as 150ms on / 150ms off.
